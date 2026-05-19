@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Diemerson</title>
+    <!-- Fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background com as formas do seu CSS -->
+    <div class="bg-layer">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-box">
+                <img src="img/letter d (2).png" alt="Logo">
+            </div>
+        </div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato" class="btn-pill" style="width: 120px; height: 35px;">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO (Sua página inicial atual) -->
+        <section id="home" class="hero reveal">
+            <h1 class="font-serif">
+                Diemerson de Matos <br>
+                <span class="silver-text">Software <span class="italic">Engineer</span></span>
+            </h1>
+            <p>Desenvolvendo interfaces modernas e sistemas eficientes com foco em minimalismo e performance.</p>
+            <div class="hero-actions">
+                <a href="#projetos" class="btn-pill" style="width: 180px;">Ver Projetos</a>
+            </div>
+        </section>
+
+        <!-- 2. SOBRE (A nova seção que vamos inserir) -->
+        <section id="sobre" class="about-section reveal">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="font-serif">
+                        Uma jornada focada em <br>
+                        <span class="silver-text">interface e performance.</span>
+                    </h2>
+                    <div class="about-description">
+                        <p>
+                            Sou <b>Diemerson de Matos</b>, um desenvolvedor movido pela curiosidade técnica e pela
+                            paixão estética. Atualmente, como estudante e Software Engineer, dedico meu tempo a traduzir
+                            problemas complexos em interfaces digitais intuitivas.
+                        </p>
+                        <p>
+                            Acredito que o código de alto nível deve ser acompanhado por um design impecável. Meu foco
+                            está em tecnologias como <b>Python, Flask e JavaScript</b>, sempre priorizando a velocidade
+                            e a experiência do usuário.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">01</span>
+                        <h4>Minimalismo</h4>
+                        <p>Menos ruído, mais clareza e foco no que realmente importa.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">02</span>
+                        <h4>Clean Code</h4>
+                        <p>Código escrito para humanos, otimizado para máquinas.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">03</span>
+                        <h4>Modern UI</h4>
+                        <p>Interfaces sofisticadas inspiradas no design contemporâneo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROJETOS -->
+        <section id="projetos" class="projects reveal">
+            ... (seu código de projetos aqui) ...
+        </section>
+
+        <!-- 4. CONTATO -->
+        <section id="contato" class="contact-section reveal">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="font-serif italic">Vamos conversar?</h2>
+                    <p>Se você tem um projeto em mente ou apenas quer dar um oi, preencha os campos abaixo.</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="form-group">
+                        <div class="input-row">
+                            <input type="text" id="name" class="input-field" placeholder="Seu nome" autocomplete="off">
+                            <input type="email" id="email" class="input-field" placeholder="Seu e-mail"
+                                autocomplete="off">
+                        </div>
+                        <textarea id="message" class="input-field" placeholder="Sua mensagem"
+                            style="height: 150px; resize: none;"></textarea>
+
+                        <button id="submit-btn" class="btn-pill btn-submit">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+
+                    <!-- Links Sociais Diretos -->
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="social-item">LinkedIn</a>
+                        <span class="divider">/</span>
+                        <a href="https://github.com/Diemerson7" target="_blank" class="social-item">GitHub</a>
+                        <span class="divider">/</span>
+                       <a href="mailto:seuemail@exemplo.com?subject=Contato via Portfólio" class="social-item">E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+        <p>© 2026 - Diemerson de Matos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
