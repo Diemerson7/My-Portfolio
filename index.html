@@ -88,9 +88,55 @@
         </section>
 
         <!-- 3. PROJETOS -->
-        <section id="projetos" class="projects reveal">
-            ... (seu código de projetos aqui) ...
-        </section>
+<section id="projetos" class="projects-section reveal">
+    <div class="projects-header">
+        <h2 class="font-serif italic">Meus Projetos</h2>
+        <p>Uma vitrine técnica das soluções que desenvolvi focando em performance e UX.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- PROJETO 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <!-- Substitua pela print/mockup do seu projeto -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Projeto 1">
+            </div>
+            <div class="project-info">
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <h3>Sistema de Gestão Inteligente</h3>
+                <p>Plataforma robusta para automação de processos internos com dashboard analítico em tempo real.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn-pill card-btn">Ver Projeto ↗</a>
+                    <a href="https://github.com/Diemerson7" target="_blank" class="btn-pill card-btn github-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJETO 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Projeto 2">
+            </div>
+            <div class="project-info">
+                <div class="tech-tags">
+                    <span>JavaScript</span>
+                    <span>CSS Moderno</span>
+                    <span>API Rest</span>
+                </div>
+                <h3>Interface de E-commerce Premium</h3>
+                <p>Experiência de compra fluida com foco em micro-interações e carregamento instantâneo.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn-pill card-btn">Ver Projeto ↗</a>
+                    <a href="https://github.com/Diemerson7" target="_blank" class="btn-pill card-btn github-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- 4. CONTATO -->
         <section id="contato" class="contact-section reveal">
@@ -99,24 +145,23 @@
                     <h2 class="font-serif italic">Entre em contato</h2>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="form-group" id="contact-form">
-
+                <div class="contact-form-wrapper">  
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="form-group">
                         <input type="hidden" name="access_key" value="6a58f9fc-e85a-4a98-848e-f29e187dbd09">
 
                         <input type="hidden" name="from_name" value="Seu Portólio">
 
+                    <div id="form-content">
                         <div class="input-row">
-                            <input type="text" name="name" id="name" class="input-field" placeholder="Seu nome" autocomplete="off" required>
-                            <input type="email" name="email" id="email" class="input-field" placeholder="Seu e-mail" autocomplete="off" required>
+                            <input type="text" name="name" id="name" class="input-field" placeholder="Seu nome" required>
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Seu e-mail" required>
                         </div>
-
-                        <textarea name="message" id="message" class="input-field" placeholder="Sua mensagem" style="height: 150px; resize: none;" required></textarea>
-                        
+                        <textarea name="message" id="message" class="input-field" placeholder="Sua mensagem" required></textarea>
                         <button type="submit" id="submit-btn" class="btn-pill btn-submit">Enviar Mensagem</button>
+                    </div>
 
-                        <div id="success-message" style="display: none; padding: 40px; text-align: center;">
-                            <h3 class="font-serif italic" style="font-size: 32px; color: #fff; margin-bottom: 10px;">Mensagem enviada!</h3>
+                        <div id="success-message" style="display: none; padding: 20px; text-align: center;">
+                            <h3 class="font-serif italic" style="font-size: 30px; color: #fff; margin-bottom: 10px;">Mensagem enviada!</h3>
                             <p style="color: #888;">Obrigado, Diemerson recebeu seu contato e responderá em breve.</p>
                         </div>
 
