@@ -96,24 +96,31 @@
         <section id="contato" class="contact-section reveal">
             <div class="contact-container">
                 <div class="contact-header">
-                    <h2 class="font-serif italic">Vamos conversar?</h2>
-                    <p>Se você tem um projeto em mente ou apenas quer dar um oi, preencha os campos abaixo.</p>
+                    <h2 class="font-serif italic">Entre em contato</h2>
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <div class="form-group">
-                        <div class="input-row">
-                            <input type="text" id="name" class="input-field" placeholder="Seu nome" autocomplete="off">
-                            <input type="email" id="email" class="input-field" placeholder="Seu e-mail"
-                                autocomplete="off">
-                        </div>
-                        <textarea id="message" class="input-field" placeholder="Sua mensagem"
-                            style="height: 150px; resize: none;"></textarea>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form-group" id="contact-form">
 
-                        <button id="submit-btn" class="btn-pill btn-submit">
-                            Enviar Mensagem
-                        </button>
-                    </div>
+                        <input type="hidden" name="access_key" value="6a58f9fc-e85a-4a98-848e-f29e187dbd09">
+
+                        <input type="hidden" name="from_name" value="Seu Portólio">
+
+                        <div class="input-row">
+                            <input type="text" name="name" id="name" class="input-field" placeholder="Seu nome" autocomplete="off" required>
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Seu e-mail" autocomplete="off" required>
+                        </div>
+
+                        <textarea name="message" id="message" class="input-field" placeholder="Sua mensagem" style="height: 150px; resize: none;" required></textarea>
+                        
+                        <button type="submit" id="submit-btn" class="btn-pill btn-submit">Enviar Mensagem</button>
+
+                        <div id="success-message" style="display: none; padding: 40px; text-align: center;">
+                            <h3 class="font-serif italic" style="font-size: 32px; color: #fff; margin-bottom: 10px;">Mensagem enviada!</h3>
+                            <p style="color: #888;">Obrigado, Diemerson recebeu seu contato e responderá em breve.</p>
+                        </div>
+
+                    </form>
 
                     <!-- Links Sociais Diretos -->
                     <div class="social-links">
@@ -121,7 +128,8 @@
                         <span class="divider">/</span>
                         <a href="https://github.com/Diemerson7" target="_blank" class="social-item">GitHub</a>
                         <span class="divider">/</span>
-                       <a href="mailto:diemersondematoss@gmail.com?subject=Contato via Portfólio" class="social-item">E-mail</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diemersondematoss@gmail.com&su=Contato+via+Portfólio"
+                            target="_blank" class="social-item">E-mail</a>
                     </div>
                 </div>
             </div>
