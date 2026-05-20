@@ -455,9 +455,13 @@ section {
 
 .project-image {
     width: 100%;
-    height: 260px;
+    height: 300px;
+    background: #000;
     overflow: hidden;
-    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .project-image img {
@@ -516,21 +520,30 @@ section {
     gap: 15px;
 }
 
-.card-btn {
+/* Removemos as diferenças e deixamos os dois botões iguais */
+.card-btn, .github-btn {
+    flex: 1; /* Faz os dois terem exatamente o mesmo tamanho */
     height: 44px !important;
+    background-color: #0c0c0c !important; /* Fundo padrão escuro */
+    color: #fff !important; /* Texto branco forte nos dois */
+    border: 1px solid #1f1f1f !important; /* Borda padrão */
     font-size: 13px !important;
-    flex: 1;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 9999px;
 }
 
-.github-btn {
-    background: transparent !important;
-    border-color: #222 !important;
-    color: #666 !important;
-}
-
-.github-btn:hover {
-    border-color: #444 !important;
-    color: #fff !important;
+/* Efeito de brilho branco forte nos DOIS botões ao mesmo tempo */
+.card-btn:hover, .github-btn:hover {
+    background-color: #FFFFFF !important; /* O branco vivo que você escolheu */
+    color: #000 !important;
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Brilho intenso */
+    transform: translateY(-2px); /* Leve subida para dar interatividade */
 }
 
 /* Responsividade para telas menores */
