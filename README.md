@@ -31,7 +31,7 @@ O site foi construído seguindo princípios de design de alto nível:
 - `logo.png`: Identidade visual em alta resolução com fundo transparente.
 
 ## 💼 Destaques no Portfólio
-### [Burguer Dev — Delivery Experience](https://github.com/Diemerson7/Delivery-Hamburgueria)
+### [Dev Burguer — Delivery Experience](https://github.com/Diemerson7/Delivery-Hamburgueria)
 Um dos projetos principais apresentados, focado em:
 - **UX:** Jornada de compra simplificada.
 - **Performance:** Carregamento rápido e otimização de imagens.
