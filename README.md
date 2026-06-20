@@ -1,6 +1,6 @@
 # 🚀 Portfólio Profissional | Diemerson de Matos
 
-Este é o meu portfólio pessoal, desenvolvido com uma estética **minimalista, moderna e premium**. O objetivo é apresentar meus projetos de engenharia de software e minhas habilidades técnicas de forma clara e elegante para recrutadores e parceiros.
+Este é o meu portfólio pessoal, desenvolvido com uma estética **minimalista, moderna e premium**. O objetivo é apresentar meus projetos de desenvolvimento web e minhas habilidades técnicas de forma clara e elegante para recrutadores e parceiros.
 
 > **Status do Projeto:** 🟢 No ar (Produção)
 
